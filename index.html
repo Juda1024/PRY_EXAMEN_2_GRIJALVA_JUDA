@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Examen</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <header class="bg-dark text-white py-3 shadow">
+        <div class="container text-center">
+            <h1>Sistema de Inventario</h1>
+        </div>
+    </header>
+    
+
+    <main class="container my-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Lista de Productos</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio ($)</th>
+                                <th>Categoría</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaProductos">
+                            </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-4 d-flex align-items-center gap-3">
+                    <button id="btnCalcular" class="btn btn-success">Calcular Total</button>
+                    
+                    <h5 class="mb-0" id="resultadoTotal"></h5>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0 small">Examen Practico 2P - Programacion Web</p>
+        </div>
+    </footer>
+    <script src="public/js/productos.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
